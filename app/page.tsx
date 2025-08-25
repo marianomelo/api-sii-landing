@@ -71,14 +71,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <StructuredData />
-      
-      {/* Preconnect to external domains */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      
-      {/* Prefetch critical resources */}
-      <link rel="dns-prefetch" href="//tecnologicachile.cl" />
-      <link rel="dns-prefetch" href="//wa.me" />
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50" role="banner">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
