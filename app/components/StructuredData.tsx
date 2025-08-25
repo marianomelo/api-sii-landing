@@ -6,7 +6,7 @@ export default function StructuredData() {
     "name": "Tecnológica Chile",
     "legalName": "Tecnológica Chile SpA",
     "url": "https://tecnologicachile.cl",
-    "logo": "https://api-sii.tecnologicachile.cl/logo.png",
+    "logo": "https://api-sii.tecnologicachile.cl/globe.svg",
     "foundingDate": "2020",
     "founders": [
       {
@@ -79,13 +79,7 @@ export default function StructuredData() {
     "softwareVersion": "2.0",
     "datePublished": "2024-01-01",
     "dateModified": "2024-12-25",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "47",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
+    // Nota: Removido aggregateRating para cumplir con políticas de datos verificables
     "offers": [
       {
         "@type": "Offer",
@@ -255,14 +249,6 @@ export default function StructuredData() {
           __html: JSON.stringify(combinedSchema, null, 2),
         }}
       />
-      {/* Additional meta tags */}
-      <meta name="geo.region" content="CL" />
-      <meta name="geo.placename" content="Chile" />
-      <meta name="ICBM" content="-33.4489,-70.6693" />
-      <meta name="DC.title" content="API SII Chile - La Más Rápida del Mercado" />
-      <meta name="DC.creator" content="Tecnológica Chile" />
-      <meta name="DC.subject" content="API, SII, Chile, Tributario, Empresarial" />
-      <meta name="DC.description" content="API empresarial para registros SII Chile" />
     </>
   );
 }
