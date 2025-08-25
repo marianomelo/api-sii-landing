@@ -1,0 +1,13 @@
+name = "api-sii-landing"
+main = "src/worker.ts"
+compatibility_date = "2025-08-25"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./out"
+
+# Define plain-text vars here if desired (avoid committing secrets)
+# [vars]
+# EMAIL_FROM = "noreply@transactional.erpsync.app"
+# EMAIL_TO = "soporte@tecnologicachile.cl"
+

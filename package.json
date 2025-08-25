@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "cf:build": "next-on-pages"
+    "cf:build": "next-on-pages",
+    "export": "next build && next export",
+    "build:workers": "npm run export"
   },
   "dependencies": {
     "lucide-react": "^0.541.0",
