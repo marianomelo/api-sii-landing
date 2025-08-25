@@ -293,171 +293,162 @@ export default function Home() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
-              ¿Por qué API SII Chile es la <span className="text-blue-600">Mejor Opción</span>?
+              ¿Por qué elegir <span className="text-blue-600">API SII Chile</span>?
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed mb-12">
-              Comparamos <strong>API SII Chile</strong> con las principales alternativas del mercado. 
-              Descubre por qué somos la <strong>API SII más rápida y confiable</strong> para tu empresa.
+              Descubre las ventajas de usar <strong>API SII Chile</strong>, 
+              la <strong>solución más confiable</strong> para tu empresa.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            {/* Performance Comparison */}
+            {/* Performance */}
             <div className="bg-white border border-slate-200 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <Zap className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Velocidad Comprobada
+                Velocidad Optimizada
               </h3>
               <div className="space-y-3">
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                  <div className="font-bold text-2xl text-green-600">&lt; 200ms</div>
-                  <div className="text-sm text-green-700">API SII Chile</div>
+                  <div className="font-bold text-2xl text-green-600">Rápida</div>
+                  <div className="text-sm text-green-700">Respuesta inmediata</div>
                 </div>
-                <div className="text-sm text-gray-600">vs 800ms+ competencia</div>
               </div>
               <p className="text-gray-600 mt-4 text-sm">
-                <strong>4x más rápida</strong> que otras APIs SII del mercado
+                <strong>Arquitectura optimizada</strong> para máximo rendimiento
               </p>
             </div>
 
-            {/* Availability */}
+            {/* Reliability */}
             <div className="bg-white border border-slate-200 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <Shield className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Alta Disponibilidad
+                Alta Confiabilidad
               </h3>
               <div className="space-y-3">
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                  <div className="font-bold text-2xl text-blue-600">99.9%</div>
-                  <div className="text-sm text-blue-700">Uptime garantizado</div>
+                  <div className="font-bold text-2xl text-blue-600">Estable</div>
+                  <div className="text-sm text-blue-700">Servicio confiable</div>
                 </div>
-                <div className="text-sm text-gray-600">vs 95-98% competencia</div>
               </div>
               <p className="text-gray-600 mt-4 text-sm">
                 <strong>Infraestructura empresarial</strong> con redundancia total
               </p>
             </div>
 
-            {/* No Limits */}
+            {/* Scalability */}
             <div className="bg-white border border-slate-200 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6 mx-auto">
                 <Database className="h-8 w-8 text-purple-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Sin Límites de Volumen
+                Escalabilidad Flexible
               </h3>
               <div className="space-y-3">
                 <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-                  <div className="font-bold text-2xl text-purple-600">∞</div>
-                  <div className="text-sm text-purple-700">Consultas ilimitadas</div>
+                  <div className="font-bold text-2xl text-purple-600">Flexible</div>
+                  <div className="text-sm text-purple-700">Se adapta a tu volumen</div>
                 </div>
-                <div className="text-sm text-gray-600">vs límites restrictivos</div>
               </div>
               <p className="text-gray-600 mt-4 text-sm">
-                <strong>Única API SII</strong> sin restricciones de uso
+                <strong>API SII escalable</strong> para cualquier necesidad
               </p>
             </div>
           </div>
 
-          {/* Comparison Table */}
-          <div className="bg-white border border-slate-200 rounded-xl overflow-hidden">
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6">
-              <h3 className="text-2xl font-bold text-white text-center">
-                Comparación: API SII Chile vs Competencia
+          {/* Features Summary */}
+          <div className="bg-white border border-slate-200 rounded-xl p-8">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Características Destacadas de API SII Chile
               </h3>
+              <p className="text-lg text-gray-600">
+                Todo lo que necesitas para integrar registros del SII en tu sistema
+              </p>
             </div>
             
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-slate-50">
-                  <tr>
-                    <th className="px-6 py-4 text-left font-semibold text-gray-900">Característica</th>
-                    <th className="px-6 py-4 text-center font-semibold text-blue-600">API SII Chile</th>
-                    <th className="px-6 py-4 text-center font-semibold text-gray-600">SimpleAPI.cl</th>
-                    <th className="px-6 py-4 text-center font-semibold text-gray-600">APIGateway.cl</th>
-                    <th className="px-6 py-4 text-center font-semibold text-gray-600">Otros APIs SII</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-6 py-4 font-medium text-gray-900">Velocidad de respuesta</td>
-                    <td className="px-6 py-4 text-center">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-100 text-green-800">
-                        &lt; 200ms
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-center text-gray-600">800ms+</td>
-                    <td className="px-6 py-4 text-center text-gray-600">1200ms+</td>
-                    <td className="px-6 py-4 text-center text-gray-600">500-2000ms</td>
-                  </tr>
-                  <tr className="bg-slate-25">
-                    <td className="px-6 py-4 font-medium text-gray-900">Límite de consultas</td>
-                    <td className="px-6 py-4 text-center">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-100 text-blue-800">
-                        Sin límites
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-center text-gray-600">500/mes gratis</td>
-                    <td className="px-6 py-4 text-center text-gray-600">1,000/mes</td>
-                    <td className="px-6 py-4 text-center text-gray-600">100-5,000/mes</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 font-medium text-gray-900">Disponibilidad (SLA)</td>
-                    <td className="px-6 py-4 text-center">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-100 text-green-800">
-                        99.9%
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-center text-gray-600">95%</td>
-                    <td className="px-6 py-4 text-center text-gray-600">98%</td>
-                    <td className="px-6 py-4 text-center text-gray-600">90-95%</td>
-                  </tr>
-                  <tr className="bg-slate-25">
-                    <td className="px-6 py-4 font-medium text-gray-900">Soporte técnico</td>
-                    <td className="px-6 py-4 text-center">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-100 text-blue-800">
-                        24/7 especializado
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-center text-gray-600">Email</td>
-                    <td className="px-6 py-4 text-center text-gray-600">Horario oficina</td>
-                    <td className="px-6 py-4 text-center text-gray-600">Limitado</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 font-medium text-gray-900">Código fuente</td>
-                    <td className="px-6 py-4 text-center">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-purple-100 text-purple-800">
-                        Disponible
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-center text-gray-600">No</td>
-                    <td className="px-6 py-4 text-center text-gray-600">No</td>
-                    <td className="px-6 py-4 text-center text-gray-600">No</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Rendimiento Optimizado</h4>
+                  <p className="text-gray-600 text-sm">Respuestas rápidas y eficientes para todas tus consultas al SII</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="h-5 w-5 text-blue-600" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Alta Disponibilidad</h4>
+                  <p className="text-gray-600 text-sm">Servicio confiable con infraestructura empresarial robusta</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="h-5 w-5 text-purple-600" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Escalabilidad Flexible</h4>
+                  <p className="text-gray-600 text-sm">Se adapta al volumen de consultas que necesite tu empresa</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="h-5 w-5 text-indigo-600" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Soporte Especializado</h4>
+                  <p className="text-gray-600 text-sm">Asistencia técnica profesional para implementación y uso</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="h-5 w-5 text-amber-600" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Código Fuente Disponible</h4>
+                  <p className="text-gray-600 text-sm">Opción de licencia completa para máximo control</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="h-5 w-5 text-emerald-600" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Integración Sencilla</h4>
+                  <p className="text-gray-600 text-sm">Documentación completa y ejemplos para implementación rápida</p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* CTA */}
           <div className="text-center mt-12">
             <h4 className="text-2xl font-bold text-gray-900 mb-4">
-              ¿Convencido de que somos la mejor API SII Chile?
+              ¿Listo para integrar API SII Chile?
             </h4>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Únete a las <strong>200+ empresas</strong> que ya usan <strong>API SII Chile</strong> 
-              para optimizar sus procesos tributarios con la API SII más confiable del mercado.
+              Optimiza tus procesos tributarios con <strong>API SII Chile</strong>, 
+              la solución más confiable para consultar registros del SII.
             </p>
             <a 
               href="#contacto" 
               className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors shadow-lg text-lg"
             >
               <Phone className="mr-3 h-6 w-6" />
-              Solicitar API SII Ahora
+              Solicitar Información
             </a>
           </div>
         </div>
