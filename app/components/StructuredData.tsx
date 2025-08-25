@@ -151,6 +151,14 @@ export default function StructuredData() {
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "¿Cuál es la mejor API SII Chile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "API SII Chile es la mejor opción del mercado. Es 4x más rápida que la competencia (menos de 200ms), no tiene límites de volumen, ofrece 99.9% de disponibilidad y es la única API SII con código fuente disponible."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "¿Qué es la API SII Chile?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -162,23 +170,39 @@ export default function StructuredData() {
         "name": "¿Cómo me integro con la API SII?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "La integración es muy sencilla. Ofrecemos documentación completa, ejemplos de código y SDKs oficiales. Nuestro equipo te ayuda a configurar el acceso en menos de 24 horas."
+          "text": "La integración con API SII Chile es muy sencilla. Ofrecemos documentación completa, ejemplos de código y SDKs oficiales. Nuestro equipo te ayuda a configurar el acceso en menos de 24 horas."
         }
       },
       {
         "@type": "Question",
-        "name": "¿La API tiene límites de volumen?",
+        "name": "¿API SII Chile tiene límites de volumen?",
         "acceptedAnswer": {
           "@type": "Answer", 
-          "text": "No, nuestra API está diseñada sin límites de volumen. Puede manejar desde pocas consultas hasta miles de registros sin degradación de rendimiento."
+          "text": "No, API SII Chile es la única API SII sin límites de volumen. Puede manejar desde pocas consultas hasta millones de registros sin degradación de rendimiento, a diferencia de la competencia que limita las consultas mensuales."
         }
       },
       {
         "@type": "Question",
-        "name": "¿Qué tipo de soporte ofrecen?",
+        "name": "¿Qué tipo de soporte ofrece API SII Chile?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ofrecemos soporte técnico especializado 24/7 para implementación, configuración y resolución de consultas técnicas. Incluye documentación exhaustiva y asistencia personalizada."
+          "text": "API SII Chile ofrece soporte técnico especializado 24/7 para implementación, configuración y resolución de consultas técnicas. Incluye documentación exhaustiva y asistencia personalizada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta API SII Chile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "API SII Chile ofrece dos modelos: suscripción administrada con precio según volumen, y licencia de código fuente completo. Contactanos para una cotización personalizada según tus necesidades específicas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué elegir API SII Chile vs otras APIs SII?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "API SII Chile es 4x más rápida (< 200ms vs 800ms+ competencia), no tiene límites de volumen, ofrece 99.9% uptime, soporte 24/7 especializado y es la única API SII con código fuente disponible. Más de 200 empresas ya confían en nosotros."
         }
       }
     ]

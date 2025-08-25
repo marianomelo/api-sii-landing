@@ -14,17 +14,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "API SII Chile - La Más Rápida del Mercado | Tecnológica Chile",
+    default: "API SII Chile: La Más Rápida para Registros de Compra y Venta | Tecnológica Chile",
     template: "%s | API SII Chile"
   },
-  description: "🚀 API más rápida para consultar registros de compra y venta del SII Chile. Diseñada para empresas con miles de facturas. Alta disponibilidad, máxima seguridad, sin límites de volumen. Integración en 24 horas.",
+  description: "🚀 API SII Chile más rápida del mercado. Consulta registros compra/venta SII sin límites. Integración 24h, soporte 24/7. La mejor API SII para empresas. ¡Solicita acceso GRATIS!",
   keywords: [
     // Palabras clave principales
+    "API SII",
     "API SII Chile",
-    "API SII más rápida",
+    "API SII más rápida", 
+    "mejor API SII Chile",
+    "API del SII Chile",
+    "SII API Chile",
     "registros compra venta SII",
     "consulta SII API",
     "datos SII Chile",
+    "API SII empresarial",
     
     // Long tail keywords específicos
     "API registros compra SII Chile",
@@ -32,6 +37,11 @@ export const metadata: Metadata = {
     "consultar registros SII API",
     "integración SII Chile API",
     "API tributaria Chile empresarial",
+    "contratar API SII Chile",
+    "precio API SII empresas",
+    "API SII más rápida 2025",
+    "mejor API SII empresas Chile",
+    "API SII facturación electrónica",
     
     // Keywords técnicos
     "API REST SII",
