@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 API SII Chile - Landing Page
 
-## Getting Started
+Landing page para **API SII Chile** - La solución más rápida del mercado para consultar registros de compra y venta del Servicio de Impuestos Internos de Chile.
 
-First, run the development server:
+## ✨ Características
+
+### 🎨 Diseño
+- **Minimalista y profesional** con colores sutiles
+- **Responsive design** optimizado para móviles y desktop
+- **Border radius consistente** en todos los elementos
+- **Tipografía optimizada** con jerarquía visual clara
+
+### 🔍 SEO Avanzado
+- **50+ keywords específicos** del mercado chileno
+- **Schema markup completo** (Organization, Software, FAQ)
+- **Open Graph y Twitter Cards** optimizadas
+- **Sitemap.xml y robots.txt** automatizados
+- **PWA manifest** para instalación como app
+
+### 💼 Casos de Uso Empresariales
+- **Integración con ERP** (SAP, Oracle, Microsoft Dynamics)
+- **Plataformas E-commerce** (WooCommerce, Shopify, Magento)
+- **Software contable chileno** (Softland, Defontana, ACF)
+- **Banca y Fintech** para evaluación crediticia
+- **Business Intelligence** (Power BI, Tableau, Qlik)
+- **Aplicaciones personalizadas** con APIs RESTful
+
+### 🛠️ Funcionalidades
+- **Widget de WhatsApp** integrado para contacto directo
+- **Formulario de contacto** optimizado para conversión
+- **Documentación API** completa con ejemplos
+- **Sección de precios** con dos modelos (Suscripción vs Código fuente)
+
+## 🏗️ Tecnologías
+
+- **[Next.js 14](https://nextjs.org)** - Framework React con App Router
+- **[Tailwind CSS](https://tailwindcss.com)** - Framework CSS utility-first
+- **[Lucide React](https://lucide.dev)** - Iconografía consistente
+- **TypeScript** - Tipado estático
+- **Schema.org** - Structured data para SEO
+
+## 🚀 Desarrollo
+
+Instalar dependencias:
+
+```bash
+npm install
+# o
+yarn install
+# o
+pnpm install
+```
+
+Ejecutar servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
+# o
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Estructura del Proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── components/
+│   └── StructuredData.tsx    # Schema markup para SEO
+├── globals.css               # Estilos globales y variables
+├── layout.tsx               # Layout principal con metadata
+├── page.tsx                 # Landing page principal
+├── manifest.ts              # PWA manifest
+├── robots.ts                # Robots.txt automatizado
+└── sitemap.ts              # Sitemap.xml automatizado
+```
 
-## Learn More
+## 🎯 SEO y Performance
 
-To learn more about Next.js, take a look at the following resources:
+### Optimizaciones Implementadas
+- **Meta tags avanzados** con keywords específicos
+- **Structured data** con múltiples esquemas
+- **Preconnect y DNS-prefetch** para recursos críticos
+- **Imágenes optimizadas** (pendiente: añadir og-image.jpg)
+- **Loading optimizado** con lazy loading
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Keywords Principales
+- "API SII Chile"
+- "API SII más rápida" 
+- "registros compra venta SII"
+- "consulta SII API"
+- "API tributaria Chile empresarial"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📧 Contacto y Soporte
 
-## Deploy on Vercel
+- **Teléfono**: [800 914 659](tel:800914659)
+- **Email**: [contacto@tecnologicachile.cl](mailto:contacto@tecnologicachile.cl)
+- **WhatsApp**: [Contacto directo](https://wa.me/56800914659)
+- **Empresa**: [Tecnológica Chile](https://tecnologicachile.cl)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Colaboradores
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Desarrollo**: Tecnológica Chile
+- **Diseño UX/UI**: Optimizado para conversión B2B
+- **SEO**: Implementado para el mercado chileno
+
+## 📄 Licencia
+
+Desarrollado por [Tecnológica Chile](https://tecnologicachile.cl) - Todos los derechos reservados.
+
+---
+
+> 🤖 Desarrollado con [Claude Code](https://claude.ai/code) - AI Assistant para desarrollo
+
+## 🚀 Deploy en Vercel
+
+La forma más fácil de deployar es usando [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+Ver la [documentación de deploy de Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para más detalles.
