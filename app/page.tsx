@@ -1373,6 +1373,35 @@ const consultarCompras = async () => {
         </div>
       </section>
 
+      {/* Disclaimer */}
+      <section className="bg-slate-100 py-8 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                <Shield className="h-5 w-5 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">Aviso Importante</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <strong>Tecnológica Chile</strong> es una empresa privada de desarrollo de software 
+                  especializada en soluciones tecnológicas para el sector empresarial chileno. 
+                  <strong> No tenemos afiliación, relación comercial ni vínculo oficial alguno con el 
+                  Servicio de Impuestos Internos (SII) de Chile</strong>. Nuestros servicios consisten 
+                  en el desarrollo de herramientas tecnológicas que facilitan el acceso a información 
+                  pública disponible a través de los sistemas oficiales del SII, cumpliendo con todas 
+                  las normativas legales aplicables.
+                </p>
+                <p className="text-gray-600 text-xs mt-3">
+                  Los datos consultados a través de nuestras soluciones provienen directamente de las 
+                  fuentes oficiales del SII y son de carácter público según la legislación vigente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
