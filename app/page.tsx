@@ -18,10 +18,47 @@ export default function Home() {
     telefono: '',
     mensaje: ''
   });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.nombre,
+          email: formData.email,
+          company: formData.empresa,
+          message: formData.mensaje || `Teléfono: ${formData.telefono}\n\nSolicito más información sobre la API SII Chile.`
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          nombre: '',
+          empresa: '',
+          email: '',
+          telefono: '',
+          mensaje: ''
+        });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -1301,11 +1338,27 @@ const consultarCompras = async () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-4 px-8 rounded-lg transition-colors flex items-center justify-center"
+                  disabled={isSubmitting}
+                  className="w-full bg-gray-900 hover:bg-gray-800 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-medium py-4 px-8 rounded-lg transition-colors flex items-center justify-center"
                 >
                   <Send className="mr-3 h-5 w-5" />
-                  Enviar solicitud
+                  {isSubmitting ? 'Enviando...' : 'Enviar solicitud'}
                 </button>
+                
+                {submitStatus === 'success' && (
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                    <p className="text-green-800 font-medium">✅ Mensaje enviado correctamente</p>
+                    <p className="text-green-700 text-sm mt-1">Nos comunicaremos contigo en las próximas 24 horas</p>
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-center">
+                    <p className="text-red-800 font-medium">❌ Error al enviar el mensaje</p>
+                    <p className="text-red-700 text-sm mt-1">Por favor, intenta nuevamente o contáctanos directamente</p>
+                  </div>
+                )}
+                
                 <p className="text-sm text-gray-500 text-center mt-3">
                   Respuesta en 24 horas hábiles
                 </p>
