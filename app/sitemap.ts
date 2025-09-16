@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://api-sii.tecnologicachile.cl';
-  const currentDate = new Date();
+  const currentDate = new Date('2024-01-01');
   
   return [
     {

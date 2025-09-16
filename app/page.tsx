@@ -19,9 +19,40 @@ export default function Home() {
     mensaje: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setSubmitMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitMessage('¡Solicitud enviada correctamente! Te contactaremos pronto.');
+        setFormData({
+          nombre: '',
+          empresa: '',
+          email: '',
+          telefono: '',
+          mensaje: ''
+        });
+      } else {
+        setSubmitMessage('Error al enviar la solicitud. Inténtalo nuevamente.');
+      }
+    } catch {
+      setSubmitMessage('Error al enviar la solicitud. Inténtalo nuevamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -1301,11 +1332,21 @@ const consultarCompras = async () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-4 px-8 rounded-lg transition-colors flex items-center justify-center"
+                  disabled={isSubmitting}
+                  className="w-full bg-gray-900 hover:bg-gray-800 disabled:bg-gray-400 text-white font-medium py-4 px-8 rounded-lg transition-colors flex items-center justify-center"
                 >
                   <Send className="mr-3 h-5 w-5" />
-                  Enviar solicitud
+                  {isSubmitting ? 'Enviando...' : 'Enviar solicitud'}
                 </button>
+                {submitMessage && (
+                  <div className={`text-sm text-center mt-3 p-3 rounded-lg ${
+                    submitMessage.includes('correctamente')
+                      ? 'bg-green-50 text-green-700 border border-green-200'
+                      : 'bg-red-50 text-red-700 border border-red-200'
+                  }`}>
+                    {submitMessage}
+                  </div>
+                )}
                 <p className="text-sm text-gray-500 text-center mt-3">
                   Respuesta en 24 horas hábiles
                 </p>
